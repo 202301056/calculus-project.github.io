@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  height: 20vh;
+  background: transparent;
+  color: aliceblue;
+  font-size: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 3px 3px 4px white;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,0) 36%, rgba(255,255,255,0.17690826330532217) 82%);
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("Images/warzone2.jpg");
+  /* background-image: url("Images/rain.jpg"); */
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.rain {
+  background-image: url("Images/Rain.png");
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rain 0.5s linear infinite;
+}
+
+.lightning {
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: -20rem;
+  animation: lightning 5s linear infinite;
+  background-image: url("Images/Lightning.png");
+  rotate: 180deg;
+  opacity: 1;
+}
+
+@keyframes lightning {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  21%{
+    opacity: 1;
+  }
+
+  25%{
+    opacity: 0;
+  }
+
+  40%{
+    opacity: 1;
+  }
+ 
+  80% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 10% -100%;
+  }
+}
+
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 20rem;
+}
+
+
+
+.metallic-text {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex; 
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: silver;
+  /* text-shadow: 6px 6px 5px rgb(186, 186, 186); */
+}
+
+a{
+  font-family: 'Times New Roman', Times, serif;
+  display: flex; 
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: silver;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  text-decoration: none;
+  z-index: 13;
+  /* line-height: 4rem; */
+}
+
+a:hover{
+  font-family: 'Times New Roman', Times, serif;
+  display: flex; 
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: rgb(0, 216, 216);
+  text-shadow: 3px 3px 9px #000;
+  text-decoration: none;
+  z-index: 13;
+
+}
+
+.menu{
+  z-index: 12;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  line-height: 5rem;
+}
+
+
+

@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-top: 3rem;
+  font-family: "Montserrat", sans-serif;
+  background: url("Images/introbg.jpeg") center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.pagebg {
+  background: #000;
+  max-width: 86%;
+  height: 88vh;
+  color: rgb(0, 175, 175);
+  margin: auto;
+  border: 0.3rem solid cyan;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  overflow-y: auto;
+}
+
+h1{
+  color: rgb(255, 28, 28);
+}
+
+.ggg{
+  height: 100%;
+  width: 100%;
+}
